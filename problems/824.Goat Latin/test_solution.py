@@ -7,7 +7,7 @@ def test_solution():
     result = Solution().toGoatLatin(sentence)
     assert expected == result
 
-    # sentence = "The quick brown fox jumped over the lazy dog"
-    # expected = "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
-    # result = Solution().toGoatLatin(sentence)
-    # assert expected == result
+    sentence = "The quick brown fox jumped over the lazy dog"
+    expected = "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
+    result = Solution().toGoatLatin(sentence)
+    assert expected == result
