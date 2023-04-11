@@ -1,0 +1,1 @@
+Leetcode problem [url](https://leetcode.com/problems/prime-in-diagonal/)
