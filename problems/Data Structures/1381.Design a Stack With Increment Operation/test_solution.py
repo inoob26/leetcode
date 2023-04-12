@@ -1,0 +1,33 @@
+from solution import CustomStack
+
+
+def test_solution():
+    stk = CustomStack(3)
+    stk.push(1)
+    stk.push(2)
+    assert 2 == stk.pop()
+    stk.push(2)
+    stk.push(3)
+    stk.push(4)
+    stk.increment(5, 100)
+    stk.increment(2, 100)
+    assert 103 == stk.pop()
+    assert 202 == stk.pop()
+    assert 201 == stk.pop()
+    assert -1 == stk.pop()
+
+    stk = CustomStack(12)
+    stk.push(83)
+    stk.increment(2, 60)
+    stk.increment(9, 61)
+    stk.increment(1, 60)
+    stk.push(82)
+    stk.push(21)
+    stk.push(58)
+    stk.increment(8, 8)
+    stk.push(22)
+    stk.push(80)
+    stk.increment(1, 64)
+    assert 80 == stk.pop()
+    assert 22 == stk.pop()
+    stk.push(24)
